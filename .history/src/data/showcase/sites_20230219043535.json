@@ -15,18 +15,18 @@
     "url": "https://code.visualstudio.com/"
   },
   {
-    "title": "Avalanche Network",
-    "image": "./images/Avax.png",
-    "url": "https://www.avax.network/"
+    "title": "Designcember",
+    "image": "./images/designcember.png",
+    "url": "https://designcember.com/"
   },
   {
-    "title": "GraphQL API Query",
-    "image": "./images/GraphQl.png",
-    "url": "https://graphql.org/"
+    "title": "The Firebase Blog",
+    "image": "./images/firebase-blog.png",
+    "url": "https://firebase.blog/"
   },
   {
-    "title": "Modex IDE",
-    "image": "./images/Modex.png",
-    "url": "https://www.modex.tech/ide"
+    "title": "Corset",
+    "image": "./images/corset.png",
+    "url": "https://corset.dev/"
   }
 ]

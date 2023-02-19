@@ -20,13 +20,13 @@
     "url": "https://www.avax.network/"
   },
   {
-    "title": "GraphQL API Query",
+    "title": "GraphQL",
     "image": "./images/GraphQl.png",
     "url": "https://graphql.org/"
   },
   {
-    "title": "Modex IDE",
-    "image": "./images/Modex.png",
-    "url": "https://www.modex.tech/ide"
+    "title": "Corset",
+    "image": "./images/corset.png",
+    "url": "https://corset.dev/"
   }
 ]
