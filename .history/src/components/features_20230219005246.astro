@@ -1,0 +1,66 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Run A Node",
+    description:
+      "Run a node on the network , which provides storage to anyone who needs it on a Global scale.",
+    icon: "mdi:handshake",
+  },
+  {
+    title: "Decentralized, Safe & Secure",
+    description:
+      "A network with no single point of control or failure. This means that instead of having all the traffic routed through a central hub, the data is spread out among all the nodes in the network. This makes the network more resilient, as it’s less likely to fail if one node goes down.",
+    icon: "mdi:feather",
+  },
+  {
+    title: "POA-Chain (Proof-of-Activity)",
+    description:
+      "Ensures that all transactions occurring on the blockchain are genuine, as well as to ensure that all miners arrive at a consensus. PoA is a combination of two other blockchain consensus algorithms: proof-of-work (PoW) and proof-of-stake (PoS).",
+    icon: "mdi:directions-fork",
+  },
+  {
+    title: "Broad Integration",
+    description:
+      "Eon integrates DAO and DeFi to its finest abilities.",
+    icon: "mdi:graph",
+  },
+  {
+    title: "Assets, DEX and Staking",
+    description:
+      "Eon-Chain DEX and Staking enabled for the EONT (Eon-Ticket).",
+    icon: "mdi:search-web",
+  },
+  {
+    title: "Community & Governance",
+    description:
+      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+    icon: "mdi:account-group",
+  },
+];
+---
+
+<ContentSection title="Features" id="features">
+  <Fragment slot="lead">
+    Eon comes <span class="text-primary">batteries included</span>. It takes
+    the best parts of
+    <span class="text-primary">state-of-the-art</span>
+    tools and adds its own <span class="text-primary">innovations</span>.
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="h-16 w-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>
